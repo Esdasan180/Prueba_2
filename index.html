@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Víctimas por sexo - Rango de años</title>
+
+  <!-- Librerías externas -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <!-- Archivos locales -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <h1>Distribución de víctimas de homicidio por sexo<br>en un rango de años</h1>
+
+  <div id="slider-container">
+    <div id="slider"></div>
+    <div id="slider-labels">
+      <span id="label-min"></span>
+      <span id="label-max"></span>
+    </div>
+  </div>
+
+  <div id="grafico"></div>
+
+  <footer>
+    Fuente: SNIC / Elaboración propia
+  </footer>
+
+  <script src="js/grafico.js"></script>
+</body>
+</html>
